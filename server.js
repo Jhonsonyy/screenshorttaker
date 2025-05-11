@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 let dir = path.join(__dirname, 'uploads', `${Date.now()}.jpg`)
-let staticfolder = path.join(__dirname, '../', 'client');
+let staticfolder = path.join(__dirname, 'client');
 console.log(staticfolder)
 app.set(express.static(path.join(__dirname, '..', 'client')))
 app.use(express.urlencoded({extended: true}));
