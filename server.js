@@ -3,9 +3,9 @@ const app = express();
 const fs = require('fs');
 const path = require('path');
 
-let staticfolder = path.join(__dirname, '../', 'client');
+let staticfolder = path.join(__dirname,'client');
 console.log(staticfolder)
-app.set(express.static(path.join(__dirname, '..', 'client')))
+app.set(express.static(path.join(__dirname, 'client')))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
